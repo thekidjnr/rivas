@@ -1,0 +1,24 @@
+.overview__container {
+  display: grid;
+  grid-template-columns: 50% 35%;
+  gap: 4%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about__image {
+  width: 100%;
+  border-radius: 1rem;
+  background: linear-gradient(10deg, #60753d, #ffeda3);
+}
+
+.about__image img {
+  border-radius: 1rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+  transition: var(--transition);
+}
+
+.about__image img:hover {
+  transform: rotate(0deg);
+}

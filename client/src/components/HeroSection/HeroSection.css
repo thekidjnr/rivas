@@ -1,0 +1,126 @@
+.hero__background-img {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(25, 55, 85, 0.5) 0%,
+      rgba(42, 95, 135, 0.3) 100%
+    ),
+    url(../../photos/background/building-1.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+/* ============NavBar Styles============= */
+.nav__container {
+  width: 90%;
+  margin: 0 auto;
+  position: sticky;
+  display: grid;
+  grid-template-columns: 12% 60% 20%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3%;
+  padding-top: 30px;
+}
+
+.nav__navlinks {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.nav__navlink {
+  font-size: 1.2rem;
+  color: var(--color-white);
+}
+
+.nav__navlink:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  display: block;
+  transition: var(--transition);
+  bottom: 28%;
+}
+
+.nav__navlink:hover::after {
+  width: 4%;
+  height: 3px;
+  background-color: #fff;
+}
+
+.company__img img {
+  width: 155px;
+  height: 121px;
+  margin: 0;
+}
+
+.btn-main {
+  display: flex;
+  background-color: #00243f;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+  width: 240px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-main:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+
+  transition: var(--transition);
+}
+
+.nav__navlinks {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* =================Body Text Styles================== */
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__header {
+  font-family: "Open Sans";
+  width: 70%;
+  font-weight: 700;
+  font-size: 90px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin: 100px auto 70px auto;
+
+  color: var(--color-white);
+}
+
+.hero__text ul {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0px;
+  width: 55%;
+  justify-content: space-around;
+}
+
+.hero__text ul li {
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #fff;
+  font-size: 34px;
+  list-style-type: disc;
+}
+
+/* ==================== MEDIA QUERIES (MEDIUM DEVICES) ======================== */
+@media screen and (max-width: 1024px) {
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICES) ======================== */
+@media screen and (max-width: 600px) {
+}

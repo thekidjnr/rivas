@@ -1,0 +1,39 @@
+.nav {
+  background: var(--color-primary);
+}
+
+.nav__container-new {
+  display: flex;
+  position: sticky;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.nav__navlinks {
+  display: flex;
+  justify-content: space-around;
+  width: 55%;
+}
+
+.nav__navlink-new {
+  font-size: 1.2rem;
+  color: var(--color-white);
+}
+
+.nav__navlink-new:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  display: block;
+  transition: var(--transition);
+  bottom: 35%;
+}
+
+.nav__navlink-new:hover::after {
+  width: 4%;
+  height: 3px;
+  background-color: #fff;
+}

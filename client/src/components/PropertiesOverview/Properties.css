@@ -1,0 +1,41 @@
+.property__container {
+  display: grid;
+  grid-template-columns: 55% 40%;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.properties__container h1 {
+  margin-left: 2rem;
+}
+
+.property__container {
+  width: 90%;
+  margin: 2rem auto 5rem;
+}
+
+.property__container-img img {
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.property__container-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.bullet__container {
+  margin-top: 1.5rem;
+}
+.bullet__container-bullet {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+.bullet__container-bullet p {
+  font-weight: 300;
+}
