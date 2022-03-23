@@ -11,15 +11,12 @@
 
 /* ============NavBar Styles============= */
 .nav__container {
-  width: 90%;
-  margin: 0 auto;
+  display: flex;
   position: sticky;
-  display: grid;
-  grid-template-columns: 12% 60% 20%;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-between;
-  gap: 3%;
-  padding-top: 30px;
+  width: 100%;
+  padding: 15px 0;
 }
 
 .nav__navlinks {

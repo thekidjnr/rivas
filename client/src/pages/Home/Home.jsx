@@ -1,14 +1,14 @@
 import React from "react";
 import HeroSection from "../../components/HeroSection/Hero";
-import AboutRivas from "../../components/AboutRivas/AboutRivas";
 import PropertiesOverview from "../../components/PropertiesOverview/PropertiesOverview";
 import Footer from "../../components/Footer/Footer";
+import Overview from "../../components/Overview/Overview";
 
 const Home = () => {
   return (
     <>
       <HeroSection />
-      <AboutRivas />
+      <Overview />
       <PropertiesOverview />
       <Footer />
     </>

@@ -21,7 +21,7 @@
 
   --transition: all 400ms ease;
 
-  --container-width-lg: 90%;
+  --container-width-lg: 85%;
   --container-width-md: 90%;
   --container-width-ms: 95%;
 }
@@ -37,7 +37,11 @@ body {
 /* =============== GENERAL STYLES ================== */
 .container {
   width: var(--container-width-lg);
-  margin: 10rem auto 0;
+  margin: 8rem auto 0;
+}
+
+section {
+  margin-top: 7rem;
 }
 
 h1 {

@@ -1,5 +1,9 @@
 .nav {
   background: var(--color-primary);
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  box-shadow: ;
 }
 
 .nav__container-new {

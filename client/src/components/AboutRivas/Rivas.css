@@ -1,9 +1,20 @@
-.overview__container {
+.about {
+  width: var(--container-width-lg);
+  margin: auto;
+  padding-top: 15rem;
+}
+
+.about__container {
   display: grid;
-  grid-template-columns: 50% 35%;
-  gap: 4%;
+  grid-template-columns: 40% 55%;
+  gap: 5%;
   justify-content: space-around;
   align-items: center;
+}
+
+.about__details h1 {
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
 .about__image {
@@ -15,10 +26,86 @@
 .about__image img {
   border-radius: 1rem;
   overflow: hidden;
-  transform: rotate(10deg);
+  transform: rotate(5deg);
   transition: var(--transition);
 }
 
 .about__image img:hover {
   transform: rotate(0deg);
+}
+
+/* ======================OUR TEAM======================== */
+.vasco__container {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 2.5rem;
+}
+
+.rita__container {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 2.5rem;
+}
+
+.vasco__container-photo {
+  width: 150%;
+}
+
+.vasco__container-photo img {
+  border-radius: 15px;
+}
+
+.vasco__details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.vasco__details-container h2 {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 0.8;
+}
+
+.vasco__details-container h3 {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.vasco__details-container h1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0 0 10px;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.phone {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.phone:hover {
+  border: 2px solid black;
+  padding: 0.2rem;
+  line-height: 0;
+}
+
+.mail {
+  font-size: 2.3rem;
+  color: var(--color-primary);
+}
+
+.mail:hover {
+  border: 2px solid black;
+  padding: 0.2rem;
+  line-height: 0;
 }
