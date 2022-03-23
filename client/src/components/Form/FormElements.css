@@ -1,0 +1,76 @@
+.form__container {
+  margin-top: 10rem;
+}
+
+.form__container-header {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 350;
+}
+
+.form__container form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.form__details-name,
+.form__details-dets {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+  gap: 1%;
+}
+
+.form__details-dets {
+  margin-top: 0.7rem;
+}
+.form__details-name input,
+.form__details-dets input {
+  max-width: 98%;
+  height: 55px;
+  padding-left: 10px;
+
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 18px;
+
+  border: 2px solid var(--color-primary);
+  border-radius: 0.4rem;
+}
+
+form textarea {
+  border: 2px solid var(--color-primary);
+  border-radius: 0.4rem;
+  height: 250px;
+  margin-top: 1rem;
+  padding: 0.5rem;
+
+  font-weight: 300;
+  font-size: 18px;
+  font-family: "Poppins";
+}
+
+form button {
+  height: 59px;
+  margin-top: 20px;
+
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 25px;
+  color: var(--color-white);
+
+  background: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: var(--color-white);
+  color: var(--color-primary);
+  border: 3px solid var(--color-primary);
+  cursor: pointer;
+
+  transition: var(--transition);
+}

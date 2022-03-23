@@ -1,0 +1,22 @@
+.mission__container-details {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  width: 90%;
+  margin: 1rem auto 0;
+}
+
+.mission__image {
+  width: 100%;
+}
+
+.vision__image {
+  width: 70%;
+}
+
+.mission__container-details ul li {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 2rem;
+}

@@ -8,16 +8,15 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className=" container footer__container">
+      <div className="footer__container">
         <div className="footer__container-1">
           <a href="/" className="rivaslogo">
             <img src={RivasLogo} alt="logo" />
           </a>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-            officia perferendis omnis, quas sit asperiores provident enim quasi
-            in voluptates esse soluta optio quo hic aliquid corrupti nihil nobis
-            quisquam!
+            The best place for your property is here. You Locate, Acquire,
+            Renovate and Invest. We are here to provide you with the best of
+            service.
           </p>
         </div>
         <div className="footer__container-2">
