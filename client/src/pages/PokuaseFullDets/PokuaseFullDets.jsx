@@ -8,6 +8,13 @@ import Pokuase3 from "../../photos/apartments/Pokuase/inner/Pokuase3.jpg";
 import Pokuase4 from "../../photos/apartments/Pokuase/inner/Pokuase3.jpg";
 import NavSide from "../../NavSide/NavSide";
 
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+import "swiper/css/keyboard";
+
 const PokuaseFullDets = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -31,6 +38,30 @@ const PokuaseFullDets = () => {
               <img src={Pokuase3} alt="photo3" />
               <img src={Pokuase4} alt="photo4" />
             </div>
+          </div>
+          <div className="photo__slide-container">
+            <Swiper
+              // install Swiper modules
+              modules={[Navigation, Pagination, Scrollbar, A11y]}
+              spaceBetween={50}
+              slidesPerView={1}
+              navigation
+              pagination={{ clickable: true }}
+              scrollbar={{ draggable: true }}
+            >
+              <SwiperSlide className="slide__img1">
+                <img src={Pokuase1} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="slide__img2">
+                <img src={Pokuase2} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="slide__img3">
+                <img src={Pokuase3} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="slide__img4">
+                <img src={Pokuase4} alt="" />
+              </SwiperSlide>
+            </Swiper>
           </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur

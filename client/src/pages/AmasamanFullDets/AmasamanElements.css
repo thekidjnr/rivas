@@ -91,6 +91,13 @@
     display: block;
   }
 
+  .slide__img1 img,
+  .slide__img2 img,
+  .slide__img3 img,
+  .slide__img4 img {
+    border-radius: 1rem;
+  }
+
   .photo__container-main,
   .photo__container-sub {
     display: none;
