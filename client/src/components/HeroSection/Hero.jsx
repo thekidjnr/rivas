@@ -1,8 +1,8 @@
 import React from "react";
 import RivasLogo from "../../photos/navbar/rivas-logo.png";
 import "./HeroSection.css";
-
-const HeroSection = () => {
+import { FaBars } from "react-icons/fa";
+const HeroSection = (toggle, isOpen) => {
   return (
     <div className="hero__background-img">
       {/* Navbar Section */}
@@ -10,6 +10,9 @@ const HeroSection = () => {
         <a href="/" className="company__img">
           <img src={RivasLogo} alt="rivas logo" />
         </a>
+        <div className="mobile__icon-bar" isOpen={isOpen} onClick={toggle}>
+          <FaBars />
+        </div>
         <div className="nav__navlinks">
           <a href="/" className="nav__navlink-main">
             HOME

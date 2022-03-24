@@ -17,6 +17,10 @@
   row-gap: 1%;
 }
 
+.photo__slide-container {
+  display: none;
+}
+
 .amasaman__container-body p {
   margin-top: 2rem;
 }
@@ -79,5 +83,16 @@
   .down__container-features,
   .form__container-small {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .photo__slide-container {
+    display: block;
+  }
+
+  .photo__container-main,
+  .photo__container-sub {
+    display: none;
   }
 }

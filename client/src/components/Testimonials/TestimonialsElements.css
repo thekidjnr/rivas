@@ -1,6 +1,7 @@
 .testimonials__container {
   text-align: center;
   background: var(--color-auxiliary);
+  padding: 3rem 0;
 }
 
 .testimonials__container img {
@@ -10,4 +11,29 @@
   margin: 20px auto;
 }
 
+.slide p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slide h3 {
+  margin-top: 2rem;
+}
+
+.slide h2 {
+  font-size: 18px;
+}
+
 /* Swiper Styles */
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-theme-color: var(--color-primary);
+  margin-bottom: 20rem;
+}
+
+@media screen and (max-width: 830px) {
+  .slide p {
+    font-size: 18px;
+  }
+}

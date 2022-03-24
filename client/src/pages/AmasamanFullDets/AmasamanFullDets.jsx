@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/NavBar/Navbar";
 import "./AmasamanElements.css";
@@ -8,11 +8,25 @@ import Amasaman1 from "../../photos/apartments/Amasaman/Details/Amasaman1.jpg";
 import Amasaman2 from "../../photos/apartments/Amasaman/Details/Amasaman2.jpg";
 import Amasaman3 from "../../photos/apartments/Amasaman/Details/Amasaman3.jpg";
 import Amasaman4 from "../../photos/apartments/Amasaman/Details/Amasaman4.jpg";
+import NavSide from "../../NavSide/NavSide";
+
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+import "swiper/css/keyboard";
 
 const AmasamanFullDets = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
-      <Navbar />
+      <Navbar toggle={toggle} />
+      <NavSide isOpen={isOpen} toggle={toggle} />
       <div className="container amasaman__container">
         <h1>AMASAMAN APARTMENT</h1>
         <div className="amasaman__container-body">
@@ -27,6 +41,32 @@ const AmasamanFullDets = () => {
               <img src={Amasaman4} alt="photo4" />
             </div>
           </div>
+          {/* ===============PHOTOS SLIDE================= */}
+          <div className="photo__slide-container">
+            <Swiper
+              // install Swiper modules
+              modules={[Navigation, Pagination, Scrollbar, A11y]}
+              spaceBetween={50}
+              slidesPerView={1}
+              navigation
+              pagination={{ clickable: true }}
+              scrollbar={{ draggable: true }}
+            >
+              <SwiperSlide className="slide__img1">
+                <img src={Amasaman1} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="slide__img2">
+                <img src={Amasaman2} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="slide__img3">
+                <img src={Amasaman3} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="slide__img4">
+                <img src={Amasaman4} alt="" />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+          {/* ============================= */}
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur
             dolor duis etiam pellentesque diam integer odio et. Egestas auctor

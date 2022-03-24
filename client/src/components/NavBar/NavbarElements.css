@@ -14,6 +14,10 @@
   padding: 15px 0;
 }
 
+.mobile__icon-bar {
+  display: none;
+}
+
 .nav__navlinks {
   display: flex;
   justify-content: space-around;
@@ -39,4 +43,53 @@
   width: 4%;
   height: 3px;
   background-color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  /* ///////////NavBar//////////////// */
+  .nav__container-new {
+    justify-content: space-between;
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .company__img img {
+    width: 115px;
+    height: 91px;
+    margin: 0;
+  }
+
+  .btn-main {
+    width: 220px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .nav__navlink-new {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .mobile__icon-bar {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 70%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--color-white);
+  }
+
+  .nav__navlinks,
+  .btn-main {
+    display: none;
+  }
+
+  .nav__container-new {
+    justify-content: space-between;
+    margin-left: 1rem;
+  }
 }

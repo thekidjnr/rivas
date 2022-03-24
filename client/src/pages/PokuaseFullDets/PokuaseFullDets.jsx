@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/NavBar/Navbar";
 import PokuaseBig from "../../photos/apartments/Pokuase/PokuaseBig.jpg";
@@ -6,11 +6,18 @@ import Pokuase1 from "../../photos/apartments/Pokuase/inner/Pokuase1.jpg";
 import Pokuase2 from "../../photos/apartments/Pokuase/inner/Pokuase2.jpg";
 import Pokuase3 from "../../photos/apartments/Pokuase/inner/Pokuase3.jpg";
 import Pokuase4 from "../../photos/apartments/Pokuase/inner/Pokuase3.jpg";
+import NavSide from "../../NavSide/NavSide";
 
 const PokuaseFullDets = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
-      <Navbar />
+      <Navbar toggle={toggle} />
+      <NavSide isOpen={isOpen} toggle={toggle} />
       <div className="container amasaman__container">
         <h1>AMASAMAN APARTMENT</h1>
         <div className="amasaman__container-body">

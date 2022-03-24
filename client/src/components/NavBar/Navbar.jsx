@@ -1,14 +1,18 @@
 import React from "react";
+import { FaBars } from "react-icons/fa";
 import RivasLogo from "../../photos/navbar/rivas-logo.png";
 import "./NavbarElements.css";
 
-const Navbar = () => {
+const Navbar = (toggle) => {
   return (
     <div className="nav">
       <div className="nav__container-new">
         <a href="/" className="company__img">
           <img src={RivasLogo} alt="rivas logo" />
         </a>
+        <div className="mobile__icon-bar" onClick={toggle}>
+          <FaBars />
+        </div>
         <div className="nav__navlinks">
           <a href="/" className="nav__navlink-new">
             HOME

@@ -13,19 +13,19 @@ const Testimonials = () => {
   const data = [
     {
       id: 1,
-      body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique vel id deserunt voluptate alias dolores atque facilis odit necessitatibus dolorem libero officiis obcaecati beatae tempora ipsam, ut expedita voluptatum veniam.",
+      body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique vel id deserunt voluptate alias dolores",
       name: "Michael Odjidja",
       position: "CEO, VeinVerse Inc.",
     },
     {
       id: 2,
-      body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique vel id deserunt voluptate alias dolores atque facilis odit necessitatibus dolorem libero officiis obcaecati",
+      body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique vel id deserunt voluptate alias dolores atque",
       name: "Nathaniel Odjidja",
       position: "CEO, VeinVerse Inc.",
     },
     {
       id: 3,
-      body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique vel id deserunt voluptate alias dolores atque facilis odit necessitatibus dolorem libero officiis obcaecati beatae tempora ipsam, ut expedita voluptatum veniam. ",
+      body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique vel id deserunt voluptate alias dolores atque facilis odit necessitatibus dolorem",
       name: "Martha Odjidja",
       position: "CEO, VeinVerse Inc.",
     },
@@ -43,15 +43,13 @@ const Testimonials = () => {
           navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
         >
           {data.map((person) => (
             <SwiperSlide className="slide" key={person.id}>
               <div>
                 <p>{person.body}</p>
                 <h3>{person.name}</h3>
-                <h3>- {person.position} -</h3>
+                <h2>- {person.position} -</h2>
               </div>
             </SwiperSlide>
           ))}
