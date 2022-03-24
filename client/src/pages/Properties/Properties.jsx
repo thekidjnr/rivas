@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../../components/NavBar/Navbar";
 import Apartments from "../../components/Apartments/Apartments";
 import Footer from "../../components/Footer/Footer";
-import NavSide from "../../NavSide/NavSide";
+import NavSide from "../../components/NavSide/NavSide";
 
 const Properties = () => {
   const [isOpen, setIsOpen] = useState(false);

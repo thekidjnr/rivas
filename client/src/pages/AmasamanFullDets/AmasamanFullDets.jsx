@@ -8,7 +8,7 @@ import Amasaman1 from "../../photos/apartments/Amasaman/Details/Amasaman1.jpg";
 import Amasaman2 from "../../photos/apartments/Amasaman/Details/Amasaman2.jpg";
 import Amasaman3 from "../../photos/apartments/Amasaman/Details/Amasaman3.jpg";
 import Amasaman4 from "../../photos/apartments/Amasaman/Details/Amasaman4.jpg";
-import NavSide from "../../NavSide/NavSide";
+import NavSide from "../../components/NavSide/NavSide";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";

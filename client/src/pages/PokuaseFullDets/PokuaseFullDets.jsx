@@ -6,7 +6,7 @@ import Pokuase1 from "../../photos/apartments/Pokuase/inner/Pokuase1.jpg";
 import Pokuase2 from "../../photos/apartments/Pokuase/inner/Pokuase2.jpg";
 import Pokuase3 from "../../photos/apartments/Pokuase/inner/Pokuase3.jpg";
 import Pokuase4 from "../../photos/apartments/Pokuase/inner/Pokuase3.jpg";
-import NavSide from "../../NavSide/NavSide";
+import NavSide from "../../components/NavSide/NavSide";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";

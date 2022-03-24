@@ -4,7 +4,7 @@ import PropertiesOverview from "../../components/PropertiesOverview/PropertiesOv
 import Footer from "../../components/Footer/Footer";
 import Overview from "../../components/Overview/Overview";
 import Testimonials from "../../components/Testimonials/Testimonials";
-import NavSide from "../../NavSide/NavSide";
+import NavSide from "../../components/NavSide/NavSide";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
