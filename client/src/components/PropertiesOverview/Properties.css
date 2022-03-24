@@ -1,6 +1,6 @@
 .property__container {
   display: grid;
-  grid-template-columns: 55% 40%;
+  grid-template-columns: 60% 40%;
   gap: 5%;
   justify-content: center;
   align-items: center;
@@ -26,16 +26,74 @@
 }
 
 .bullet__container {
-  margin-top: 1.5rem;
+  margin-top: 0.2rem;
 }
 .bullet__container-bullet {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
   font-size: 2.2rem;
 }
 
 .bullet__container-bullet p {
   font-weight: 300;
+}
+
+.property__container button {
+  width: 200px;
+  height: 60px;
+  margin-top: 1rem;
+
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 22px;
+  background-color: var(--color-primary);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: none;
+}
+
+.property__container button:hover {
+  background-color: var(--color-white);
+  transition: var(--transition);
+  color: var(--color-primary);
+}
+
+.property__container button:active {
+  background-color: var(--color-primary);
+  transition: var(--transition);
+  color: var(--color-white);
+}
+
+/* ==================== MEDIA QUERIES (MEDIUM DEVICES) ======================== */
+@media screen and (max-width: 1024px) {
+  .property__container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .container h1 {
+    font-size: 35px;
+  }
+
+  .property__container-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 2rem;
+  }
+
+  .property__container-body h2 {
+    font-size: 30px;
+  }
+
+  .property__container button {
+    margin-top: 2rem;
+  }
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICES) ======================== */
+@media screen and (max-width: 600px) {
 }

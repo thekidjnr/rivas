@@ -58,3 +58,36 @@
   font-weight: 500;
   margin-bottom: 0.8rem;
 }
+
+@media screen and (max-width: 830px) {
+  .contact__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 9rem;
+  }
+
+  .contact__container-phone {
+    background: var(--color-auxiliary);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .contact__container-bar {
+    display: none;
+  }
+
+  .mail__container-image,
+  .phone__container-image {
+    width: 40%;
+  }
+
+  .phone__container-des a,
+  .mail__container-des a {
+    font-size: 30px;
+  }
+
+  .phone__container-des h2,
+  .mail__container-des h2 {
+    font-size: 35px;
+  }
+}

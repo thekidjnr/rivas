@@ -11,19 +11,19 @@ const HeroSection = () => {
           <img src={RivasLogo} alt="rivas logo" />
         </a>
         <div className="nav__navlinks">
-          <a href="/" className="nav__navlink">
+          <a href="/" className="nav__navlink-main">
             HOME
           </a>
-          <a href="/properties" className="nav__navlink">
+          <a href="/properties" className="nav__navlink-main">
             PROPERTIES
           </a>
-          <a href="/news" className="nav__navlink">
+          <a href="/news" className="nav__navlink-main">
             NEWS & EVENTS
           </a>
-          <a href="/aboutus" className="nav__navlink">
+          <a href="/aboutus" className="nav__navlink-main">
             ABOUT US
           </a>
-          <a href="/contactus" className="nav__navlink">
+          <a href="/contactus" className="nav__navlink-main">
             CONTACT US
           </a>
         </div>

@@ -1,7 +1,5 @@
 .about {
-  width: var(--container-width-lg);
-  margin: auto;
-  padding-top: 15rem;
+  padding-top: 12rem;
 }
 
 .about__container {
@@ -15,6 +13,10 @@
 .about__details h1 {
   line-height: 1.2;
   margin-bottom: 1rem;
+}
+
+.small-devices {
+  display: none;
 }
 
 .about__image {
@@ -108,4 +110,79 @@
   border: 2px solid black;
   padding: 0.2rem;
   line-height: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  .about__details h1,
+  .team__container h1 {
+    font-size: 35px;
+  }
+  .about__details p,
+  .vasco__details-container p {
+    font-size: 18px;
+  }
+
+  .about__container {
+    display: grid;
+    grid-template-columns: 40% 55%;
+    gap: 5%;
+    margin-top: -3rem;
+  }
+  .vasco__details-container h2 {
+    font-size: 30px;
+  }
+
+  .vasco__details-container h1 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .about__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__details h1 {
+    text-align: center;
+  }
+
+  .about__image {
+    margin-top: 3rem;
+    width: 95%;
+  }
+
+  /* ////////////TEAM///////////////// */
+  .team__container-header {
+    text-align: center;
+  }
+
+  .vasco__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vasco__container-photo {
+    width: 100%;
+  }
+
+  .vasco__details-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .rita__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

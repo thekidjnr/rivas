@@ -1,0 +1,13 @@
+.testimonials__container {
+  text-align: center;
+  background: var(--color-auxiliary);
+}
+
+.testimonials__container img {
+  margin-top: 20px;
+  width: 7%;
+  height: 7%;
+  margin: 20px auto;
+}
+
+/* Swiper Styles */

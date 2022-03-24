@@ -20,3 +20,32 @@
   text-align: justify;
   margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 1200px) {
+  .mission__image {
+    width: 130%;
+  }
+  .vision__image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .mission__container-details {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .mission__container h1 {
+    text-align: center;
+  }
+
+  .mission__container-details ul {
+    margin-top: 2rem;
+  }
+  .mission__image {
+    width: 80%;
+  }
+  .vision__image {
+    width: 80%;
+  }
+}

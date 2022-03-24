@@ -86,3 +86,29 @@
   font-weight: 500;
   margin-bottom: 0.8rem;
 }
+
+@media screen and (max-width: 830px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+
+    width: 95%;
+    margin: 5rem auto0;
+  }
+
+  .footer__container-1 {
+    margin-left: 0;
+  }
+
+  .footer__container-2 {
+    margin-top: 3rem;
+  }
+
+  .rights__container {
+    margin-top: 3rem;
+  }
+
+  .footer__container-3 {
+    margin-top: 3rem;
+  }
+}

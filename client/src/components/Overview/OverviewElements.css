@@ -4,7 +4,6 @@
   gap: 5%;
   justify-content: space-around;
   align-items: center;
-  width: var(--container-width-lg);
   margin: 4rem auto;
 }
 
@@ -28,4 +27,37 @@
 
 .overview__image img:hover {
   transform: rotate(0deg);
+}
+
+/* ==================== MEDIA QUERIES (MEDIUM DEVICES) ======================== */
+@media screen and (max-width: 1024px) {
+  .overview__container {
+    grid-template-columns: 50% 45%;
+    gap: 5%;
+  }
+
+  .overview__details h1 {
+    font-size: 35px;
+  }
+
+  .overview__details p {
+    font-size: 18px;
+  }
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICES) ======================== */
+@media screen and (max-width: 600px) {
+  .overview__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .overview__details h1 {
+    text-align: center;
+  }
+
+  .overview__image {
+    margin-top: 3rem;
+    width: 90%;
+  }
 }

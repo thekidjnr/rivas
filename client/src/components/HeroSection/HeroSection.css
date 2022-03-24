@@ -25,23 +25,23 @@
   text-align: center;
 }
 
-.nav__navlink {
+.nav__navlink-main {
   font-size: 1.2rem;
   color: var(--color-white);
 }
 
-.nav__navlink:after {
+.nav__navlink-main:after {
   content: "";
   position: absolute;
-  width: 0%;
+  width: 2%;
   height: 1px;
   display: block;
   transition: var(--transition);
-  bottom: 28%;
+  bottom: 35%;
 }
 
-.nav__navlink:hover::after {
-  width: 4%;
+.nav__navlink-main:hover::after {
+  width: 3%;
   height: 3px;
   background-color: #fff;
 }
@@ -54,7 +54,7 @@
 
 .btn-main {
   display: flex;
-  background-color: #00243f;
+  background-color: var(--color-primary);
   color: var(--color-white);
   border: 2px solid var(--color-white);
   width: 240px;
@@ -90,10 +90,10 @@
   font-family: "Open Sans";
   width: 70%;
   font-weight: 700;
-  font-size: 90px;
+  font-size: 80px;
   text-align: center;
   letter-spacing: 0.04em;
-  margin: 100px auto 70px auto;
+  margin: 100px auto 50px auto;
 
   color: var(--color-white);
 }
@@ -109,15 +109,63 @@
 .hero__text ul li {
   font-family: "Roboto";
   font-weight: 500;
-  color: #fff;
-  font-size: 34px;
+  color: var(--color-white);
+  font-size: 40px;
   list-style-type: disc;
 }
 
 /* ==================== MEDIA QUERIES (MEDIUM DEVICES) ======================== */
 @media screen and (max-width: 1024px) {
+  /* ///////////NavBar//////////////// */
+  .nav__container {
+    justify-content: space-between;
+  }
+
+  .company__img img {
+    width: 115px;
+    height: 91px;
+    margin: 0;
+  }
+
+  .btn-main {
+    width: 220px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .nav__navlink-main {
+    font-size: 1rem;
+  }
+
+  /* ///////////Body//////////////// */
+
+  .hero__header {
+    width: 90%;
+    font-size: 60px;
+  }
+
+  .hero__text ul {
+    width: 75%;
+  }
+
+  .hero__text ul li {
+    font-size: 34px;
+    list-style-type: disc;
+  }
 }
 
 /* ==================== MEDIA QUERIES (SMALL DEVICES) ======================== */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 830px) {
+  .hero__header {
+    font-size: 50px;
+  }
+
+  .hero__text ul {
+    width: 90%;
+  }
+
+  .hero__text ul li {
+    font-size: 25px;
+  }
 }

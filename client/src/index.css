@@ -17,6 +17,7 @@
   --color-bg-variant: #e5e5e5;
   --color-primary: #00243f;
   --color-white: #fff;
+  --color-auxiliary: #f2f2f2;
 
   --transition: all 400ms ease;
 
@@ -40,7 +41,7 @@ body {
 }
 
 section {
-  margin-top: 7rem;
+  margin-top: 8rem;
 }
 
 h1 {
@@ -110,12 +111,8 @@ img {
 }
 
 /* ==================== MEDIA QUERIES (SMALL DEVICES) ======================== */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .container {
-    width: var(--container-width-sm);
-  }
-
-  section > h2 {
-    margin-bottom: 2rem;
+    width: var(--container-width-ms);
   }
 }

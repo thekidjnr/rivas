@@ -8,12 +8,13 @@ import { GrMail } from "react-icons/gr";
 
 const PropertiesOverview = () => {
   return (
-    <div className="about">
+    <div className="about container">
       <div className="about__container">
         <div className="about__details">
           <h1>
             ABOUT <br /> RIVAS PROPERTIES
           </h1>
+
           <p>
             We are a Real Estate Company that strategically acquire residential
             properties and rent them out to the average Ghanaian. A continuing
@@ -30,7 +31,7 @@ const PropertiesOverview = () => {
 
       {/* ========TEAM========= */}
       <section className="team__container">
-        <h1>OUR TEAM</h1>
+        <h1 className="team__container-header">OUR TEAM</h1>
 
         {/* ////////VASCO//////////// */}
         <div className="vasco__container">

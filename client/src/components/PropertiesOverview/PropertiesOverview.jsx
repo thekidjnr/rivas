@@ -35,6 +35,13 @@ const PropertiesOverview = () => {
       },
     },
   ];
+
+  const navigate = useNavigate();
+
+  function handleClick(id) {
+    navigate(`/properties/${id}`);
+  }
+
   return (
     <section className="container">
       <h1>AVAILABLE PROPERTIES</h1>
@@ -65,6 +72,13 @@ const PropertiesOverview = () => {
                   <p>Lorem ipsum dolor sit.</p>
                 </div>
               </div>
+              <button
+                onClick={() => {
+                  handleClick(datas.id);
+                }}
+              >
+                TELL ME MORE!
+              </button>
             </div>
           </div>
         ))}
